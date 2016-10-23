@@ -9,3 +9,13 @@ def func01(x):
 
 
 print func01(8)(5)
+
+
+def fun02():
+    x = [5]
+
+    def fun03():
+        x[0] *= x[0]
+        return x[0]
+    return fun03()
+print fun02()
