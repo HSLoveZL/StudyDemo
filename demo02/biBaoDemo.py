@@ -19,3 +19,13 @@ def fun02():
         return x[0]
     return fun03()
 print fun02()
+
+
+def fun04():
+    x1 = 5
+
+    def fun05():
+        nonlocal x1
+        x1 *= x1
+        return x1
+    return fun05()
