@@ -7,4 +7,4 @@ def fac(n):
 
 number = int(input('请输入一个整数：'))
 result = fac(number)
-print result
+print '%d 的阶乘是：%d' % (number, result)
