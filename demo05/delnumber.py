@@ -10,4 +10,4 @@ def deltnum(x):
         else:
             break
 
-print filter(deltnum, [1, 2, 3, 4])
+print filter(deltnum, range(1, 100))
