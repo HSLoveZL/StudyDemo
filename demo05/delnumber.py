@@ -1,13 +1,15 @@
-# encoding=utf-8
+# coding=utf-8
 # 删除列表中所有素数元素
 from math import sqrt
 
 
-def deltnum(x):
-    for i in range(1, int(sqrt(x))):
-        if x/i != 0:
-            return x
-        else:
+def is_prime(n):
+    flag = 0
+    for i in range(2, int(sqrt(n))+1):
+        if n % i == 0:
+            flag = 1
             break
+    if flag == 1:
+        return n
 
-print filter(deltnum, range(1, 100))
+print filter(is_prime, range(1, 101)),
